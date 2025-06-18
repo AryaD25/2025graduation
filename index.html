@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="container-navbar">
+            <img src="IND.png" class="img-navbar" />
+            </ul>
+            <div>
+                <ul class="ul-navbar">
+                    <li class="li-navbar">ArzzWeb</li>
+            </div>
+        </div>
+        <!-- Navbar end -->
+        <div class="container-h1">
+            <div class="div-h1">
+                <h1 class="h1-title">MASUKKAN NAMA</h1>
+            </div>
+        </div>
+
+        <div class="container-input">
+            <div id="root" class="div-input">
+                <input type="text" placeholder="nama" id="usernameInput" class="input-up" />
+                <input type="password" placeholder="kelas" id="passwordInput" class="input-up" />
+                <button class="login" onclick="onLogin()" id="" loginButton><a href="home.html"
+                        class="a-login">LOGIN</a></button>
+            </div>
+        </div>
+        <script type="application/javascript">
+
+            let usernameInput = document.getElementById('usernameInput');
+            let passwordInput = document.getElementById('passwordInput');
+            let loginButton = document.getElementById('loginButton');
+            let admin = document.getElementById('admin');
+            let siswa = document.getElementById('siswa')
+
+            admin.style.display = "none";
+            siswa.style.display = "none";
+
+            function onLogin() {
+                localStorage.setItem("username", usernameInput.value);
+                logoutButton.style.display = "block";
+                if (usernameInput.value == "ArzzD" && passwordInput.value == "1225") {
+                    localStorage.setItem("role", "admin");
+                    usernameInput.style.display = "none";
+                    passwordInput.style.display = "none";
+                    loginButton.style.display = "none";
+                } else {
+                    usernameInput.style.display = "none";
+                    passwordInput.style.display = "none";
+                    loginButton.style.display = "none";
+                    localStorage.setItem("role", "siswa");
+                }
+            }
+
+            if (localStorage.getItem('username')) {
+                usernameInput.style.display = "none";
+                passwordInput.style.display = "none";
+            }
+
+            function onLogout() {
+                localStorage.clear();
+                location.reload()
+            };
+        </script>
+    </div>
+</body>
+
+</html>

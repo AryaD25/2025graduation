@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Tuhan</title>
+</head>
+<style>
+    *,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        background-image: linear-gradient(to top, gray, rgb(194, 236, 183));
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container-navbar {
+        background-image: linear-gradient(to bottom, #222, black);
+        height: 50px;
+        align-items: center;
+        display: flex;
+
+
+    }
+
+    .ul-navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .li-navbar {
+        color: white;
+        list-style-type: none;
+        margin-left: 8px;
+        font-weight: bold;
+    }
+
+    .img-navbar {
+        height: 20px;
+        width: 30px;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .div-nav {
+        height: 60px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: silver;
+        border: 2px solid;
+        border-radius: 6px;
+        margin: 5px;
+    }
+
+    nav {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .div-sj {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .container-soal {
+        height: 95%;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .div-soal {
+        background-color: rgb(219, 215, 255);
+        border: 2px solid #444;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .soal {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: rgb(255, 166, 255);
+        border-radius: 6px;
+        height: 50px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .ul-jawaban {
+        list-style-type: none;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .pilihan {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hasil {
+        display: none;
+        color: green;
+    }
+
+    .pilihan:checked~.hasil {
+        display: block;
+    }
+
+    .div-selesai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .h2-selesai {
+        background-color: aqua;
+        border: 2px solid blue;
+        border-radius: 8px;
+        height: 30px;
+        width: 120px;
+    }
+
+    .a-selesai {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+
+<body>
+    <div>
+        <div class="container-navbar">
+            <img src="IND.png" class="img-navbar" />
+            </ul>
+            <div>
+                <ul class="ul-navbar">
+                    <li class="li-navbar">ArzzWeb</li>
+            </div>
+        </div>
+        <div class="div-nav">
+            <nav>Pilih Satu Jawaban</nav>
+        </div>
+        <!-- Soal 1 -->
+            <div class="container-soal">
+                <div class="div-soal">
+                    <div class="soal">Siapa Yang Membuat Website Ini?</div>
+                    <ul class="ul-jawaban">
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal1" />Manusia<span
+                                class="hasil">Uhh.. bener tapi
+                                salah</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal1" />Nevin<span
+                                class="hasil">Nevin saha
+                                bjir??</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal1" />Bu Lia<span
+                                class="hasil">AlJa YoUrr MoOoOmMMm</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal1" />Hitler<span
+                                class="hasil">Bro...</span></li>
+                    </ul>
+                </div>
+                <!-- soal 2 -->
+                <div class="div-soal">
+                    <div class="soal">Apakah Website Ini Bagus?</div>
+                    <ul class="ul-jawaban">
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal2" />Bagus<span
+                                class="hasil">Terima Kasih</span>
+                        </li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal2" />Not Bad<span
+                                class="hasil">Y</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal2" />Bagus Banget<span
+                                class="hasil">Terima Kasih
+                                Banyak Baby..:v</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal2" />Lumayan Lah<span
+                                class="hasil">Thanks</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- soal 3 -->
+                <div class="div-soal">
+                    <div class="soal">Tahun Berapa Indonesia Merdeka?</div>
+                    <ul class="ul-jawaban">
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal3" />17 Agustus 194S<span
+                                class="hasil">Mata Anda
+                                Sehat?</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal3" />17 Agustus 2068<span
+                                class="hasil">Goblok Sih
+                                Kata Gua</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal3" />17 Agustus 1945<span
+                                class="hasil">Nah,
+                                Pinter Juga Lu</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal3" />Saya Tidak Tahu<span
+                                class="hasil">Fiks Bukan
+                                Orang Indonesia</span></li>
+                    </ul>
+                </div>
+                <!-- soal 4 -->
+                <div class="div-soal">
+                    <div class="soal">Berapa Hasil Dari 5 x 5 + 5 x 0 =</div>
+                    <ul class="ul-jawaban">
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal4" />0<span
+                                class="hasil">Di Hitung Lagi Yaa >-< </span>
+                        </li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal4" />50<span
+                                class="hasil">Fiks Lu Sering Tidur
+                                DiKelas</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal4" />Kamu Nanya<span
+                                class="hasil">Sepertinya Anda
+                                Cocok Dibuang Ke Tempat Sampah</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal4" />25<span
+                                class="hasil">Pintarnya Anak Muda
+                                ini</span></li>
+                    </ul>
+                </div>
+                <!-- soal 5 -->
+                <div class="div-soal">
+                    <div class="soal">Apakah Anda Akan Melupakan Saya?</div>
+                    <ul class="ul-jawaban">
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal5" />Iya<span
+                                class="hasil">Hiks.. Parah Sih
+                                Melupakan temannya</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal5" />Tidak<span
+                                class="hasil">Tapi Kau Akan Ku
+                                Lupakan</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal5" />Ntahlah<span
+                                class="hasil">Dih</span></li>
+                        <li class="li-jawaban"><input type="radio" class="pilihan" name="soal5" />Akan Ku Ingat Jika Kau
+                            Memberikan Aku
+                            1jt<span class="hasil">Fuck You</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        <!-- Selesai -->
+        <div class="div-selesai">
+            <h2 class="h2-selesai"><a href="selesai.html" class="a-selesai">SELESAI</a></h2>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: linear-gradient(to top, gray, rgb(194, 236, 183));
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container-navbar {
+            background-image: linear-gradient(to bottom, #222, black);
+            height: 50px;
+            margin: 0;
+            align-items: center;
+            display: flex;
+
+        }
+
+        .ul-navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .li-navbar {
+            color: white;
+            list-style-type: none;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+
+        .img-navbar {
+            height: 20px;
+            width: 30px;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .h1-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            background-color: white;
+        }
+
+        .h1-content {
+            background-color: whitesmoke;
+            border: 2px solid black;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-content {
+            background-image: linear-gradient(to top, silver, gray);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 400px;
+        }
+
+        .img-content {
+            width: 90%;
+            height: 90%;
+        }
+
+        .a-content {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            font-size: 20px;
+            margin: 20px;
+            flex-direction: column;
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 12px 10px 6px 5px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 12px 10px 6px 5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 12px 10px 6px 5px rgba(0, 0, 0, 0.75);
+        }
+
+        .a-content:hover {
+            background-color: rgb(211, 211, 211);
+        }
+
+        .content-h1 {
+            font-size: 25px;
+        }
+
+        .content-p {
+            background-color: white;
+            box-shadow: 12px 10px 6px 5px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 12px 10px 6px 5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 12px 10px 6px 5px rgba(0, 0, 0, 0.75);
+        }
+
+        .p-content {
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            border: 2px solid black;
+            height: 10vh;
+        }
+
+        .container-bottom {
+            background-image: linear-gradient(to top, black, #444);
+        }
+
+        .container-navbartwo {
+            background-color: black;
+        }
+
+        .ul-bottom {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+
+        .a-bottom {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            width: 130px;
+            height: 50px;
+          
+        }
+
+        .a-bottom:hover {
+            background-color: rgb(94, 94, 94);
+        }
+
+        .div-bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="container-navbar">
+            <img src="IND.png" class="img-navbar" />
+            </ul>
+            <div>
+                <ul class="ul-navbar">
+                    <li class="li-navbar">ArzzWeb</li>
+            </div>
+        </div>
+        <!-- Navbar end -->
+        <div class="h1-div">
+            <h1 class="h1-content">Silahkan Pilih Game Dibawah Ini</h1>
+        </div>
+        <div class="container-content">
+            <a href="soal.html" class="a-content">
+                <img src="picture/ganda.jpg" class="img-content" />
+                <h1 class="content-h1">Pilihan Tuhan</h1>
+                <p class="content-p">Ini adalah game pilihan ganda</p>
+            </a>
+        </div>
+        <div class="container-content">
+            <a href="koleksi.html" class="a-content">
+                <img src="picture/seeyou.jpg" class="img-content" />
+                <h1 class="content-h1">Koleksi</h1>
+                <p class="content-p">Beberapa Koleksi Foto</p>
+            </a>
+        </div>
+        <div class="container-content">
+            <a href="https://youtu.be/qkxEGssTnO4?si=p-duYGv1qCMdZXaJ" class="a-content">
+                <img src="picture/Youtube.png" class="img-content" />
+                <h1 class="content-h1">YoUr MoOoM</h1>
+                <p class="content-p">Menonton Video diYoutube</p>
+            </a>
+        </div>
+        <div class="container-bottom">
+                <div container-navbartwo>
+                    <ul class="ul-bottom">
+                        <div class="div-bottom">
+                            <li li-bottom><a href="home.html" class="a-bottom">HOME</a>
+                            <li li-bottom><a href="credit.html" class="a-bottom">CREDIT</a>
+                        </div>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
